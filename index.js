@@ -1,9 +1,19 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  //iterate through array and assign i
+  for (let i = 0; i < array.length; i++) {
+    //Get a number that adds to target
+    const total = target - array[i];
+    //Go through the rest of the code
+    for (let j = i + 1; j < array.length; j++) {
+      //take numbers from array and cross check with our total if similar return true
+      if (array[j] === total) return true;
+    }
+  }
+  return false; //Have to be declared outside so that there is complete iteration
 }
-
 /* 
   Write the Big O time complexity of your function here
+  O (n^2)
 */
 
 /* 
