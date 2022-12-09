@@ -28,6 +28,11 @@ function hasTargetSum(array, target) {
 
 /*
   Add written explanation of your solution here
+  the code has an array that it runs thrugh the first time to get i and assign it an index. Then the code takes the target number
+  and subtracts the number in the array[i] that was found in the fist round of iteartaion and stores it in a constant called total.
+  then a second iteration is run through the same array to find j which is always i+1 to avoid reusing the numbers in the array.
+  the number in array[j] is then checked strictly if it equal to the total. If it is equal the return is true. Adn after complete array iteration
+  and the number is not equal to the total. It returns false.
 */
 
 // You can run `node index.js` to view these console logs
