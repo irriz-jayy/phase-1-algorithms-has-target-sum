@@ -19,11 +19,13 @@ function hasTargetSum(array, target) {
 /* 
   Add your pseudocode here
   function hasTargetSum(array, target) {
-    iterate over the array
-    if two numbers in array add up to target
-    returns true
-    if they dont add up to target
-    returns false
+    take array find first number [i]
+    take target -array[i] set to total
+    take array and find second number array[j]
+    check if total number equals to array[j]
+    return true
+    return false if not equal
+  }
 */
 
 /*
